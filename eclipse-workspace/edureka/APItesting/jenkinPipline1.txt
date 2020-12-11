@@ -1,0 +1,18 @@
+pipline{
+agent any
+stages
+{
+satge('build')
+{
+steps{
+echo "building"
+bat "mvn clean"
+}
+}
+stage('test')
+{
+steps {
+echo "Testing
+bat "mvn test"
+}
+}
